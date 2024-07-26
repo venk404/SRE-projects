@@ -14,7 +14,6 @@ db_user = os.getenv('POSTGRES_USER')
 db_password = os.getenv('POSTGRES_PASSWORD')
 db_host = os.getenv('POSTGRES_HOST')
 db_port = os.getenv('POSTGRES_PORT')
-print(db_host)
 
 conn = psycopg2.connect(database=db_name,
                             user=db_user,
