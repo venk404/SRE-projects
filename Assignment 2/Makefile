@@ -1,8 +1,16 @@
 .ONESHELL:
 VENV := venv
 
-all: install Schema-creation run
+all: docker-run
 
+docker-run:
+ifeq ($(OS),Windows_NT)
+	docker build -t rest-api .
+	docker run --rm --name venkatesh -d -p 8000:8000 --network dem rest-api
+else
+	docker build -t rest-api .
+	docker run --rm --name venkatesh -d -p 8000:8000 --network dem rest-api
+endif
 
 install: $(VENV)/Scripts/activate
 
@@ -19,8 +27,6 @@ else
 	$(VENV)/bin/python -m pip install --upgrade pip
 	$(VENV)/bin/pip install -r requirements.txt
 endif
-
-
 
 Schema-creation:
 ifeq ($(OS),Windows_NT)
