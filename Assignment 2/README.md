@@ -1,4 +1,24 @@
 
+# Student Management API
+
+This project is a simple Student Management API built using FastAPI. It allows for basic CRUD operations on student data. The API supports creating, reading, updating, and deleting student information.
+
+
+
+## Features
+
+- Create Student: Add a new student.
+- Get All Students: Retrieve a list of all students.
+- Get Student by ID: Retrieve a specific student by their ID.
+- Update Student: Update a student's information.
+- Delete Student: Delete a student by their ID.
+
+
+## Requirments
+- Python 3.11+
+- PIP
+- Docker & Docker Compose(For database)
+- Make (Optional)
 ## Installation
 1) Clone the repository:
 
@@ -31,4 +51,12 @@ __If you don't have make, then follow the steps below:-__
 
 ```
 
+
+
+## Documentation(API Documentation)
+
+- Refer to the API documentation for the endpoints listed below
+```bash
+  http://127.0.0.1:8000/docs
+```
 
