@@ -63,6 +63,12 @@ This project is a simple Student Management API built using FastAPI. It allows f
 ```
 
 
+
+##Run Test
+```bash
+  make test
+```
+
 ## Documentation(API Documentation)
 
 - Refer to the API documentation for the endpoints listed below

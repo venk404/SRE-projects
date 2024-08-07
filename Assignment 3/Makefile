@@ -53,9 +53,9 @@ endif
 
 test:
 ifeq ($(OS),Windows_NT)
-	$(VENV)\Scripts\python test.py
+	python test.py
 else
-	$(VENV)/bin/python test.py
+	python test.py
 endif
 
 .PHONY: all Run_all_containers Start_DB run-migrations build-api run-api
