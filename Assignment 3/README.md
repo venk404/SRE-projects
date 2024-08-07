@@ -30,9 +30,7 @@ This project is a simple Student Management API built using FastAPI. It allows f
 ```bash
   cd .\Assignment 3
 ```
-3) Rename the .env file and fill the details
-
-  ## "Rename the .env file from the Schema folder and, in the root directory, the variable dev is used for versioning the image."
+3) ## "Rename the .env file from the Schema folder and, in the root directory, the variable dev is used for versioning the image."
 
 
 4) The following command will start the DB container, run the DB DML migrations, build the REST API, and run the REST API Docker container.
