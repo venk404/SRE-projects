@@ -11,13 +11,13 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - name: use python
-            uses: actions/setup-python@v5
-            with:
-                python-version: '3.12' 
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.12' 
         
         - name: Install Dependencies
-            run:  pip install --no-cache-dir -r requirements.txt
+          run:  pip install --no-cache-dir -r requirements.txt
 
         - name: Run Build
-            run: pylint --const-rgx='[a-z\_][a-z0-9\_]{2, 30}$' main.py
+          run: pylint --const-rgx='[a-z\_][a-z0-9\_]{2, 30}$' main.py
         
