@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - master
-      - main  # Added main branch for completeness
+      - main 
 
 jobs:
   build:
